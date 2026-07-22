@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Consultation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:650px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    color:#0b3d91;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+button{
+    width:100%;
+    margin-top:30px;
+    padding:14px;
+    background:#0b3d91;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1256c4;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>✈️ Travel Consultation Booking</h1>
+
+<form action="https://formsubmit.co/muizzraheem02@gmail.com" method="post">
+    <input type="hidden" name="_subject" value="New Travel Consultation Booking">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_tamplate" value="table">
+    <input type="hidden" name="_next" value="">
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name" required name="Full Name">
+
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email address" required name="Email">
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter your phone number" required name="Number">
+
+<label>Purpose of Consultation</label>
+<select required name="Purpose of Consultation">
+    <option value="">Select Purpose</option>
+    <option>Study Abroad</option>
+    <option>Work Abroad</option>
+    <option>Visa Preparation</option>
+    <option>Visa Interview Preparation</option>
+    <option>School Admission</option>
+    <option>Scholarship Guidance</option>
+    <option>General Consultation</option>
+</select>
+
+<label>Preferred Consultation Mode</label>
+<select required name="Preferred Mode">
+    <option value="">Select Mode</option>
+    <option>Online</option>
+    <option>Physical</option>
+</select>
+
+<label>Preferred Date</label>
+<input type="date" required name="Preferred Date">
+
+<label>Preferred Time</label>
+<input type="time" required name="Preferred Time">
+
+<label>Additional Notes (Optional)</label>
+<textarea rows="4" placeholder="Tell us more about your consultation..." name="Additional Notes"></textarea>
+
+<button type="submit">Book Consultation</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Exam Registration</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:650px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    color:#0b3d91;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+.radio-group{
+    display:flex;
+    gap:20px;
+    margin-top:8px;
+}
+
+.radio-group label{
+    font-weight:normal;
+    margin:0;
+}
+
+.hidden{
+    display:none;
+}
+
+button{
+    width:100%;
+    margin-top:30px;
+    padding:14px;
+    background:#0b3d91;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1256c4;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>📘 Local Exam Registration</h1>
+
+<form action="https://formsubmit.co/muizzraheem02@gmail.com" method="post">
+    <input type="hidden" name="_subject" value="New Internal Exam Registration">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_tamplate" value="table">
+    <input type="hidden" name="_next" value="">
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name" name="Full Name" required>
+
+<label>Email Address</label>
+<input type="email" name="Email" placeholder="Enter your email address" required>
+
+<label>Phone Number</label>
+<input type="tel" name="Number" placeholder="Enter your phone number" required>
+
+<label>Exam Type</label>
+<select required name="Exam Type">
+    <option value="">Select Exam</option>
+    <option>UTME</option>
+    <option>WAEC</option>
+    <option>NECO</option>
+    <option>A-Level</option>
+</select>
+
+<label>Have you written UTME?</label>
+
+<div class="radio-group">
+<label>
+<input type="radio" name="Utme" value="Yes" onclick="showScore()" n>
+ Yes
+</label>
+
+<label>
+<input type="radio" name="Utme" value="No" onclick="hideScore()">
+ No
+</label>
+</div>
+
+<div id="scoreBox" class="hidden">
+
+<label>UTME Score</label>
+<input type="number" name="Utme Score" placeholder="Enter your UTME score">
+
+</div>
+
+<label>Subjects You Need Help With</label>
+
+<textarea rows="4" placeholder="Example: Mathematics, English, Physics" name="Subjects to support"></textarea>
+
+<label>Preferred Mode</label>
+
+<select required name="Preferred Mode">
+    <option value="">Select Mode</option>
+    <option>Physical</option>
+    <option>Online</option>
+</select>
+
+<button type="submit">Register Now</button>
+
+</form>
+
+</div>
+
+<script>
+
+function showScore(){
+    document.getElementById("scoreBox").classList.remove("hidden");
+}
+
+function hideScore(){
+    document.getElementById("scoreBox").classList.add("hidden");
+}
+
+</script>
+
+</body>
+</html>
